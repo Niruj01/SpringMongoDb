@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add EmployeeDetails</title>
+</head>
+<body>
+<h1>Add Guvi EmployeeDetails</h1>
+
+<form action="/addEmployee" method="post" th:object="${employeeEntity}">
+
+    <label for="employeeId">Employee ID:</label>
+    <input type="text" id="employeeId" name="employeeId" required placeholder="Enter Employee Id" /><br><br>
+
+    <label for="employeeName">Name:</label>
+    <input type="text" id="employeeName" name="employeeName" required placeholder="Enter Employee Name" /><br><br>
+
+    <label for="employeeEmail">Email:</label>
+    <input type="text" id="employeeEmail" name="employeeEmail" required placeholder="Enter Email" /><br><br>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required placeholder="Enter Location" /><br><br>
+
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
